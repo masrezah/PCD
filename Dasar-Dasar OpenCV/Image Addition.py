@@ -19,4 +19,4 @@ plt.show()
 
 print(gambar_a.shape)
 print(gambar_b.shape)
-print(gambar_c.shape)
+# print(gambar_c.shape)
