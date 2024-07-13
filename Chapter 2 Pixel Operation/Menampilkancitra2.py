@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Baca gambar
-img = cv2.imread("clouds-8420083_1280.jpg")
+img = cv2.imread("dataset/clouds-8420083_1280.jpg")
 
 # Tampilkan gambar asli (dalam format BGR)
 plt.figure(figsize=(10, 5))

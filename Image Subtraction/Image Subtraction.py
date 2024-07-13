@@ -2,8 +2,8 @@ from PIL import Image, ImageChops
 import matplotlib.pyplot as plt
 
 # Baca gambar
-image1 = Image.open('gambar 1.jpg')
-image2 = Image.open('gambar g.jpg')
+image1 = Image.open('dataset/gambar 1.jpg')
+image2 = Image.open('dataset/gambar g.jpg')
 
 # Pastikan kedua gambar memiliki ukuran yang sama
 if image1.size != image2.size:

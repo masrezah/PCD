@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Baca gambar
-image1 = cv2.imread('gambar 1.jpg')
-image2 = cv2.imread('gambar g.jpg')
+image1 = cv2.imread('dataset/gambar 1.jpg')
+image2 = cv2.imread('dataset/gambar g.jpg')
 
 # Pastikan kedua gambar memiliki ukuran yang sama
 if image1.shape != image2.shape:

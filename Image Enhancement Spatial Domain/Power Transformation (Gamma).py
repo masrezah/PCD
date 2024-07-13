@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-img = cv2.imread('pexels-pixabay-67566.jpg',0)
+img = cv2.imread('dataset/pexels-pixabay-67566.jpg', 0)
 gamma = 2.5
 img_power = img**gamma
 plt.figure(figsize=(20, 20))

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Baca gambar dan konversi ke RGB
-img = cv2.imread('pexels-pixabay-67566.jpg')
+img = cv2.imread('dataset/pexels-pixabay-67566.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 # Konversi ke tipe float untuk operasi yang lebih tepat

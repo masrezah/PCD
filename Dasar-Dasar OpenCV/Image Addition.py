@@ -2,9 +2,9 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-gambar_a = cv2.imread('gambar 1.jpg',1)
+gambar_a = cv2.imread('dataset/gambar 1.jpg', 1)
 gambar_a = cv2.cvtColor(gambar_a, cv2.COLOR_BGR2RGB)
-gambar_b = cv2.imread('gambar g.jpg',1)
+gambar_b = cv2.imread('dataset/gambar g.jpg', 1)
 gambar_b = cv2.cvtColor(gambar_b, cv2.COLOR_BGR2RGB)
 
 gambar_add = cv2.add(gambar_a, gambar_b)

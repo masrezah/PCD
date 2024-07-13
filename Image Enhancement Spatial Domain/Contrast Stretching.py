@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Baca gambar dan konversi ke grayscale
-img = cv2.imread('clouds-8420083_1280.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('dataset/clouds-8420083_1280.jpg', cv2.IMREAD_GRAYSCALE)
 
 # Tentukan nilai minimum dan maksimum intensitas piksel
 min_intensity = np.min(img)
