@@ -261,7 +261,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Label
 from PIL import Image, ImageTk
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"D:\00. Informatics Engineering\00. Matakuliah\01. SEM 5\06. PCD\PCD_UAS\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"D:\00. Informatics Engineering\00. Matakuliah\01. SEM 5\06. PCD\PCD\assets\frame0")
 
 file_path = None
 img_label = None
