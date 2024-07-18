@@ -4,10 +4,9 @@ import tkinter.filedialog
 from pathlib import Path
 from tkinter import Tk, Canvas, Button, PhotoImage, Label
 from PIL import Image, ImageTk
-from feature.negativeImages import convert_to_negative
-from feature.grayscaleImages import convert_to_grayscale
-from gammaTransformation import convert_gamma
-from gammaTransformation import input_gamma
+from Feature.negativeImages import convert_to_negative
+from Feature.grayscaleImages import convert_to_grayscale
+from Feature.gammaTransformation import input_gamma
 
 
 OUTPUT_PATH = Path(__file__).parent
