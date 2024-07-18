@@ -4,8 +4,10 @@ import tkinter.filedialog
 from pathlib import Path
 from tkinter import Tk, Canvas, Button, PhotoImage, Label
 from PIL import Image, ImageTk
-from Feature.negativeImages import convert_to_negative
-from Feature.grayscaleImages import convert_to_grayscale
+from feature.negativeImages import convert_to_negative
+from feature.grayscaleImages import convert_to_grayscale
+from gammaTransformation import convert_gamma
+from gammaTransformation import input_gamma
 
 
 OUTPUT_PATH = Path(__file__).parent
@@ -151,16 +153,16 @@ button_grayscale.place(
     height=55.0
 )
 
-button_image_5 = PhotoImage(
+button_gamma = PhotoImage(
     file=relative_to_assets("button_5.png"))
-button_5 = Button(
-    image=button_image_5,
+button_gammaT = Button(
+    image=button_gamma,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_5 clicked"),
+    command=lambda: input_gamma(file_path),
     relief="flat"
 )
-button_5.place(
+button_gammaT.place(
     x=424.0,
     y=717.0,
     width=169.0,
