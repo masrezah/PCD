@@ -1,11 +1,9 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QFileDialog, QLabel, QHBoxLayout, QFrame
-from PyQt5.QtGui import QPixmap, QImage, QFont
+from PyQt5.QtGui import QPixmap, QImage, QFont, QIcon
 from PyQt5.QtCore import Qt
 import cv2
 import numpy as np
-
-
 
 class MainWindow(QWidget):
     def __init__(self):
@@ -14,6 +12,9 @@ class MainWindow(QWidget):
         self.setWindowTitle("Image Processor")
         self.setGeometry(100, 100, 900, 600)
         self.setStyleSheet("background-color: #2e2e2e; color: #f0f0f0;")
+
+        # Set window icon
+        self.setWindowIcon(QIcon('assets/shopping.png'))
 
         self.image_path = None
         self.image = None
